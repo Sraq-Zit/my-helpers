@@ -1,4 +1,4 @@
-# ~/.oualil.rc
+# ~/.oualil/ssh.sh
 
 ssh-user-add() {
     local name=""
