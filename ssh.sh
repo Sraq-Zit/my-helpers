@@ -35,7 +35,11 @@ ssh-user-add() {
         username="$3"
     fi
 
-    if [[ -n "$4" ]]; then
+    if [[ -z "$2" ]]; then
+        echo -e "\n\033[1mEnter the port (default 22):\033[0m"
+        read -r port
+        port=${port:-22}
+    else
         port="$4"
     fi
 
